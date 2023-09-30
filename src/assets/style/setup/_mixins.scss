@@ -1,0 +1,75 @@
+/* Media queries Breakpoint mixins */
+
+@mixin for-narrow-layout {
+    @media (min-width: $break-narrow) {
+        @content;
+    }
+}
+
+@mixin for-normal-layout {
+    @media (min-width: $break-normal) {
+        @content;
+    }
+}
+
+@mixin for-wide-layout {
+    @media (min-width: $break-wide) {
+        @content;
+    }
+}
+
+@mixin layoutGTC($max) {
+    grid-template-columns:
+        minmax($layoutPadding, 1fr) minmax(auto, $max) minmax($layoutPadding, 1fr);
+}
+
+// Buttons
+
+@mixin primaryBtn($type: normal, $size: big, $theme: light) {
+    cursor: pointer;
+    font-family: roboto;
+    font-weight: 700;
+
+    @if $theme ==dark {
+        background-color: $clrPrimary;
+        color: $clrPrimary-1;
+        border: 1px solid $clrPrimary-1;
+    }
+
+    @if $theme ==light {
+        background-color: $clrPrimary-1;
+        color: $clrPrimary;
+        border: 1px solid $clrPrimary;
+    }
+
+    @if $size ==big {
+        height: rem(48px);
+        min-width: rem(153px);
+        font-size: rem(18px);
+        line-height: rem(30px);
+    }
+
+    @if $size ==medium {
+        height: rem(38px);
+        min-width: rem(128px);
+        font-size: rem(14px);
+        line-height: rem(38px);
+    }
+
+    @if $type ==round {
+        border-radius: 2em;
+    }
+}
+
+@mixin iconBtn() {
+    cursor: pointer;
+    background-color: lighten($clrPrimary, 8%);
+    color: $clrPrimary-1;
+    border: none;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: rem(20px);
+    line-height: rem(42px);
+    height: rem(38px);
+    min-width: rem(50px);
+}

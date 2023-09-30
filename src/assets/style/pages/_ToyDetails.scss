@@ -1,0 +1,25 @@
+.toy-details-container {
+    margin-block-start: rem(40px);
+
+    .toy-details {
+
+        .img-container {
+            background-color: #f5f6f6;
+        }
+
+        .img-container,
+        .details-container {
+            width: 50%;
+        }
+
+        .details-container {
+
+            h2,
+            h3,
+            .labels-container {
+                margin-block-end: rem(20px);
+            }
+
+        }
+    }
+}

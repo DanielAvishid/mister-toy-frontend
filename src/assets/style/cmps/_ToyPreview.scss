@@ -1,0 +1,65 @@
+.toy-preview {
+
+    .img-container {
+        cursor: pointer;
+        position: relative;
+
+        .stock {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: $clrPrimary-1;
+            padding: 10px;
+
+            &.in {
+                background-color: #50C878;
+            }
+
+            &.out {
+                background-color: #DC143C;
+            }
+        }
+    }
+
+    .admin-btn-container {
+        .icon-btn {
+            margin-inline-start: 10px;
+            @include iconBtn()
+        }
+    }
+
+    .add-cart-btn {
+        @include primaryBtn($type: round, $size: medium)
+    }
+
+    .toy-img {
+        border-radius: 10px;
+        background-color: #f5f6f6;
+    }
+
+    .toy-name-price,
+    .toy-labels,
+    .toy-img {
+        cursor: pointer;
+        margin-block-end: 10px;
+    }
+
+    .toy-name-price {
+        font-size: rem(20px);
+    }
+
+    .toy-labels {
+
+        span {
+            text-align: center;
+            font-size: rem(14px);
+            padding-block: 5px;
+            padding-inline: 10px;
+            border: 1px solid darken(#c4c4c4, 10%);
+            border-radius: 2em;
+            color: darken(#c4c4c4, 10%);
+            margin-inline-end: 5px;
+            width: fit-content;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.toy-list-container {
+    width: 100%;
+
+    .add-toy-btn {
+        @include primaryBtn($type: normal, $size: big, $theme: dark);
+        margin-block-end: 10px;
+    }
+
+    .toy-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: minmax(1fr, repeat(4, 1fr));
+        gap: 20px;
+    }
+}

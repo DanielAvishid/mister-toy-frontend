@@ -1,0 +1,17 @@
+.toy-index {
+    position: relative;
+    margin-block: rem(40px);
+
+    .aside-container {
+        aside {
+            position: sticky;
+            top: rem(100px);
+            width: 300px;
+
+            h3 {
+                margin-block-end: rem(20px);
+            }
+        }
+    }
+
+}

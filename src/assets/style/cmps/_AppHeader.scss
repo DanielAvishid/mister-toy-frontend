@@ -1,0 +1,54 @@
+.app-header-container {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    box-shadow: 0 8px 10px -11px black;
+    background-color: $clrPrimary-1;
+    min-height: rem(80px);
+    width: 100vw;
+
+    .app-header {
+        position: relative;
+
+        nav {
+            .logout-btn {
+                @include primaryBtn($type: round, $size: medium, $theme: dark)
+            }
+        }
+    }
+
+    .logo {
+        cursor: pointer;
+        text-shadow: $clrPrimary 1px 0 5px;
+        font-size: rem(19px);
+        font-family: chailce;
+        margin-inline-end: 50px;
+    }
+
+    a {
+        font-weight: 700;
+    }
+
+    .icon {
+        margin-inline-end: 10px;
+    }
+
+    .user-info {
+        p {
+            font-weight: 700;
+            color: $clrPrimary;
+            margin-inline-end: 10px;
+        }
+    }
+}
+
+.login-page {
+    background-color: $clrPrimary-1;
+    padding-block: 20px;
+    z-index: 20;
+    right: 0;
+    top: rem(100px);
+    right: rem(20px);
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}

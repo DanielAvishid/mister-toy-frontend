@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto;
+    margin: 0;
+    letter-spacing: 0.00938em;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a.active {
+    color: $clrPrimary;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Dont stretch my Media */
+img,
+embed,
+video,
+object {
+    max-width: 100%
+}
+
+.debug * {
+    outline: 1px solid gold
+}

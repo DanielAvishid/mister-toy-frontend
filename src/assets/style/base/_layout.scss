@@ -1,0 +1,12 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: minmax($layoutPadding, 1fr) minmax(auto, $break-wide) minmax($layoutPadding, 1fr);
+
+    >*.full {
+        grid-column: 1 / -1;
+    }
+
+    >*:not(.full) {
+        grid-column: 2;
+    }
+}

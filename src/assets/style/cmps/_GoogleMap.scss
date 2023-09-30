@@ -1,0 +1,19 @@
+.map-btns-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block-start: 20px;
+
+    .map-btn {
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-family: gentleman;
+        height: 40px;
+        border: 0;
+        padding-inline: 20px;
+    }
+}
+
+.marker {
+    font-size: rem(25px);
+}
